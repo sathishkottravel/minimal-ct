@@ -2,6 +2,8 @@
 # Inviwo CTUtils Module
 ivw_module(CTUtils)
 
+add_subdirectory(ext)
+
 #--------------------------------------------------------------------
 # Add header files
 set(HEADER_FILES

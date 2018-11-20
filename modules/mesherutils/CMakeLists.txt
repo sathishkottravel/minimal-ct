@@ -2,6 +2,8 @@
 # Inviwo MesherUtils Module
 ivw_module(MesherUtils)
 
+add_subdirectory(ext)
+
 #--------------------------------------------------------------------
 # Add header files
 set(HEADER_FILES
