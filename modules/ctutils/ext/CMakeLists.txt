@@ -27,6 +27,19 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/libigl/cmake)
 #set(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH};${CMAKE_CURRENT_LIST_DIR}/libigl/cmake")
 set(ENV{LIBIGLROOT} libigl)
 
+IF ( MSVC )
+
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/libigl/libigl_patch.diff.1")
+    message("IGL already patched for MSVC...")    
+else()
+    message("Applying Patch for IGL...")
+    file(COPY libigl_patch.diff.1 DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/libigl)
+    #execute_process(COMMAND cd  ${CMAKE_CURRENT_SOURCE_DIR}/libigl)
+    execute_process(COMMAND git apply ${CMAKE_CURRENT_SOURCE_DIR}/libigl/libigl_patch.diff.1 WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/libigl)
+endif()
+
+ENDIF(MSVC)
+
 add_subdirectory(libigl)
 
 #message("MODULE PATH", ${CMAKE_MODULE_PATH})

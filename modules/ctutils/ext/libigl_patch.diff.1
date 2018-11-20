@@ -1,0 +1,13 @@
+diff --git a/include/igl/signed_distance.cpp b/include/igl/signed_distance.cpp
+index f638b1f5..1623b893 100644
+--- a/include/igl/signed_distance.cpp
++++ b/include/igl/signed_distance.cpp
+@@ -291,7 +291,7 @@ IGL_INLINE void igl::signed_distance_pseudonormal(
+   C.resize(np,3);
+   typedef typename AABB<DerivedV,3>::RowVectorDIMS RowVector3S;
+ # pragma omp parallel for if(np>1000)
+-  for(size_t p = 0;p<np;p++)
++  for(int p = 0;p<np;p++)
+   {
+     typename DerivedV::Scalar s,sqrd;
+     RowVector3S n,c;
