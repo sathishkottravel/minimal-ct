@@ -11,7 +11,7 @@ The tool-sets in this repository has its basis from TopoAngler
 
 This repository consists modules for Inviwo Framework (https://inviwo.org/)
 
-# This project has sub-modules of several github projects listed as follows:
+This project has sub-modules of several github projects listed as follows:
  
 ContourTree https://github.com/harishd10/contour-tree
 
