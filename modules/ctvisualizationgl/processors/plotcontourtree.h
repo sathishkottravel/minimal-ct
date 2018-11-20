@@ -33,8 +33,14 @@
 #include <modules/ctvisualizationgl/ctvisualizationglmoduledefine.h>
 #include <inviwo/core/common/inviwo.h>
 #include <inviwo/core/processors/processor.h>
+#include <inviwo/core/ports/volumeport.h>
 #include <inviwo/core/properties/ordinalproperty.h>
-#include <inviwo/core/ports/imageport.h>
+#include <modules/opengl/inviwoopengl.h>
+#include <inviwo/core/properties/stringproperty.h>
+#include <inviwo/core/properties/optionproperty.h>
+#include <inviwo/core/ports/meshport.h>
+
+#include <modules/ctutils/ext/ct/ContourTree/TopologicalFeatures.hpp>
 
 namespace inviwo {
 
@@ -69,8 +75,20 @@ public:
     static const ProcessorInfo processorInfo_;
 
 private:
-    ImageOutport outport_;
-    FloatVec3Property position_;
+
+    MeshOutport nodeMeshOutport_;
+    MeshOutport arcsMeshOutport_;
+
+    OptionPropertyInt _mode;
+    FloatProperty _contourTreeLevel;
+    IntProperty _nFeatures;
+    FloatProperty _quasiSimplificationFactor;
+    StringProperty _contourTreeFile;
+
+    contourtree::TopologicalFeatures _topologicalFeatures;
+
+    bool _fileIsDirty;
+    bool _dataIsDirty;
 };
 
 }  // namespace inviwo

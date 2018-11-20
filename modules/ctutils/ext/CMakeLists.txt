@@ -63,14 +63,6 @@ source_group("CMake Files" FILES ${CMAKE_CURRENT_SOURCE_DIR}/CMakeLists.txt)
 # Supress warnings
 ivw_suppress_compiler_warnings(igl)
 
-#--------------------------------------------------------------------
-# Install library into target folder
-ivw_default_install_comp_targets(core igl)
-
-#--------------------------------------------------------------------
-# Creates VS folder structure
-ivw_folder(igl ext/CTUtils)
-
 source_group("CMake Files" FILES ${CMAKE_CURRENT_SOURCE_DIR}/CMakeLists.txt)
 
 #--------------------------------------------------------------------
