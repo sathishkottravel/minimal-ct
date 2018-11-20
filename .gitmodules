@@ -4,9 +4,6 @@
 [submodule "modules/ctutils/ext/libigl"]
 	path = modules/ctutils/ext/libigl
 	url = https://github.com/libigl/libigl.git
-[submodule "modules/mesherutils/ext/quartet/quartet"]
-	path = modules/mesherutils/ext/quartet/quartet
-	url = https://github.com/crawforddoran/quartet.git
 [submodule "modules/mesherutils/ext/qhull"]
 	path = modules/mesherutils/ext/qhull
 	url = https://github.com/qhull/qhull.git
