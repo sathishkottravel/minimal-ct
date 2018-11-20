@@ -50,7 +50,7 @@ PlotContourTree::PlotContourTree()
     addProperty(position_);
 }
 
-voidPlotContourTree::process() {
+void PlotContourTree::process() {
     // outport_.setData(myImage);
 }
 

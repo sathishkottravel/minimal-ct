@@ -20,7 +20,7 @@ set(QUARTET_HEADER_FILES
     ${QUARTET_ROOT}/optimize_tet_mesh.cpp
     ${QUARTET_ROOT}/make_signed_distance.cpp
     ${QUARTET_ROOT}/make_tet_mesh.cpp    
-    ${CMAKE_CURRENT_SOURCE_DIR}/quartet/quartet.cpp    
+    ${CMAKE_CURRENT_SOURCE_DIR}/qtet/quartet.cpp    
 )
 
 #--------------------------------------------------------------------
@@ -37,7 +37,7 @@ set(QUARTET_SOURCE_FILES
     ${QUARTET_ROOT}/optimize_tet_mesh.h
     ${QUARTET_ROOT}/make_signed_distance.h
     ${QUARTET_ROOT}/make_tet_mesh.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/quartet/quartet.h   
+    ${CMAKE_CURRENT_SOURCE_DIR}/qtet/quartet.h   
 )
 
 add_library(quartet STATIC ${QUARTET_SOURCE_FILES} ${QUARTET_HEADER_FILES})
