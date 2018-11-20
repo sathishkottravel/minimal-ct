@@ -10,3 +10,6 @@
 [submodule "modules/mesherutils/ext/qhull"]
 	path = modules/mesherutils/ext/qhull
 	url = https://github.com/qhull/qhull.git
+[submodule "modules/mesherutils/ext/qtet/quartet"]
+	path = modules/mesherutils/ext/qtet/quartet
+	url = https://github.com/crawforddoran/quartet.git

@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.1)
 
 
 #Quartet
-set(QUARTET_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/quartet/quartet/src")
+set(QUARTET_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/qtet/quartet/src")
 
 
 #--------------------------------------------------------------------
