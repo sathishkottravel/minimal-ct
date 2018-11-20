@@ -1,0 +1,15 @@
+RawFile: boron-original.raw
+Resolution: 150 150 150
+Format: UINT16
+BasisVector1: 5.0597 0 0
+BasisVector2: 0 5.6304 0
+BasisVector3: 0 0 6.9885
+Offset: -2.52985 -2.8152 -3.49425
+WorldVector1: 1 0 0 0
+WorldVector2: 0 1 0 0
+WorldVector3: 0 0 1 0
+WorldVector4: 0 0 0 1
+DataRange: 0 65535
+ValueRange: 0 65535
+Unit: arb. unit.
+filename: G:/inviwo-git-win10/inviwo-public/data/volumes/boron.dat

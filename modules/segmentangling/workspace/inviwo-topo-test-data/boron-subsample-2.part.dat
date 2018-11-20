@@ -1,0 +1,7 @@
+Rawfile: boron-subsample-2.part.raw
+Resolution: 75 75 75
+Format: UINT32
+BasisVector1: 1 0.0 0.0
+BasisVector2: 0.0 1 0.0
+BasisVector3: 0.0 0.0 1
+
