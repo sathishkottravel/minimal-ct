@@ -11,7 +11,7 @@
 
 #include <modules/segmentangling/common.h>
 
-#include <modules/segmentangling/ext/contour-tree/ContourTree/TopologicalFeatures.hpp>
+#include <modules/ctutils/ext/ct/ContourTree/TopologicalFeatures.hpp>
 
 namespace inviwo {
 

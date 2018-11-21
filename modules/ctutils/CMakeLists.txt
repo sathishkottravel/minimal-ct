@@ -7,14 +7,14 @@ add_subdirectory(ext)
 #--------------------------------------------------------------------
 # Add header files
 set(HEADER_FILES
-    #${CMAKE_CURRENT_SOURCE_DIR}/ctutilsprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumetoct.h
 )
 ivw_group("Header Files" ${HEADER_FILES})
 
 #--------------------------------------------------------------------
 # Add source files
 set(SOURCE_FILES
-    #${CMAKE_CURRENT_SOURCE_DIR}/ctutilsprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumetoct.cpp
 )
 ivw_group("Source Files" ${SOURCE_FILES})
 

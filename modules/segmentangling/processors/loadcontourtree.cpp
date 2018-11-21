@@ -14,7 +14,7 @@
 #include <inviwo/core/common/inviwoapplication.h>
 #include <inviwo/core/util/rendercontext.h>
 
-#include <modules/segmentangling/ext/contour-tree/ContourTree/TopologicalFeatures.hpp>
+#include <modules/ctutils/ext/ct/ContourTree/TopologicalFeatures.hpp>
 #include <inviwo/core/util/filesystem.h>
 
 
